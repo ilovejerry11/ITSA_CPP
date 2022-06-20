@@ -1,14 +1,17 @@
-#include<stdio.h>  
-  
-int main(){  
-    int arr[6];  
-    for(int i=0; i<6; i++) {  
-        scanf("%d", &arr[i]);  
-    }  
-          
-    for(int i=0; i<5; i++) {  
-        printf("%d ",arr[5-i]);  
-    }  
-          
-    printf("%d\n",arr[0]);  
-}  
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> v;
+    for (int i=0; i<6; i++) {
+        int input;
+        cin >> input;
+        v.push_back(input);
+    }
+    for (int i=5; i>0; i--) {
+        cout << v[i] << " ";
+    }
+    cout << v[0] << endl;
+}
